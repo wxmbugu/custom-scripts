@@ -22,8 +22,8 @@ function wificonnect () {
             echo "WiFi network already exists. Connecting..."
             nmcli device wifi connect "$selected_wifi"
         else
-            read -p "Enter your password: " -s password
-            nmcli device wifi connect "$selected_wifi" password "$password"
+            read -s "password?Enter your password: " 
+            nmcli device wifi connect "$selected_wifi" password $password
         fi
     else
         echo "Invalid input. Please enter a number corresponding to the Wi-Fi network."
