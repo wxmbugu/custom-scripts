@@ -1,7 +1,7 @@
 #!/bin/sh
 # You could place this script in e.g. `${HOME}/scripts/alert-battery.sh`
 
-threshold=15  # threshold percentage to trigger alert
+threshold=50  # threshold percentage to trigger alert
 
 # Use `awk` to capture `acpi`'s percent capacity ($2) and status ($3) fields
 # and read their values into the `status` and `capacity` variables

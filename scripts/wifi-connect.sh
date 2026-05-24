@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 function wificonnect () {
     IFS=$'\n'
